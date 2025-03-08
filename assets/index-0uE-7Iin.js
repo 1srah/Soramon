@@ -54,7 +54,7 @@ Error generating stack: `+a.message+`
                     ${S?"opacity-100 translate-y-0":"opacity-0 translate-y-5"}        
             `,children:"Home"}),E.jsx("a",{href:"#about",onClick:()=>p(!1),className:`text-2xl font-semibold text-white my-4 transform transition-transform duration-300
             ${S?"opacity-100 translate-y-0":"opacity-0 translate-y-5"}        
-    `,children:"About"}),E.jsx("a",{href:"#projects",onClick:()=>p(!1),className:`text-2xl font-semibold text-white my-4 transform transition-transform duration-300
+    `,children:"About"}),E.jsx("a",{href:"#project",onClick:()=>p(!1),className:`text-2xl font-semibold text-white my-4 transform transition-transform duration-300
             ${S?"opacity-100 translate-y-0":"opacity-0 translate-y-5"}        
     `,children:"Projects"}),E.jsx("a",{href:"#contact",onClick:()=>p(!1),className:`text-2xl font-semibold text-white my-4 transform transition-transform duration-300
             ${S?"opacity-100 translate-y-0":"opacity-0 translate-y-5"}        
