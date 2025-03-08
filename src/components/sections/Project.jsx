@@ -22,7 +22,7 @@ export const Project = () => {
               identifying snake species from images and assisting in
               decision-making.
             </p>
-            <div className="mb-4">
+            <div className="mb-4 flex flex-wrap gap-2">
               {[
                 "Python",
                 "Tensorflow",
@@ -38,16 +38,6 @@ export const Project = () => {
                   {tech}
                 </span>
               ))}
-            </div>
-
-            <div className="flex justify-between items-center">
-              <a
-                href="#"
-                className="text-blue-400 transition-colors hover:text-blue-300"
-              >
-                {" "}
-                View Project ➞
-              </a>
             </div>
           </div>
 

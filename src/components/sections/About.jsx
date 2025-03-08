@@ -74,28 +74,28 @@ export const About = () => {
               <h3 className="text-xl font-bold mb-4">Work Experience</h3>
               <div className="space-y-4 text-gray-300">
                 <div>
-                  <h4 className="font-semibold">
+                  <h4 className="font-semibold mb-2">
                     Intern at Western Digital Thailand <br /> (5 Month)
                   </h4>
                   <p className="text-gray-350">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Similique nulla eum perspiciatis explicabo, sapiente earum
-                    sint tempore hic quia perferendis esse officiis libero
-                    soluta, doloremque consequuntur deserunt eaque eveniet
-                    consequatur.
+                    Provided first-line technical support to employees,
+                    resolving hardware, software, and network-related issues,
+                    Assisted in installing, configuring, and maintaining IT
+                    equipment such as computers, printers, and peripherals,
+                    Monitored and managed helpdesk tickets to ensure timely
+                    resolution and user satisfaction.
                   </p>
                 </div>
 
                 <div>
-                  <h4 className="font-semibold">
-                    Intern at DEF Corp (2000-2025)
+                  <h4 className="font-semibold mb-2">
+                    Intern at Advice Saweangha <br/>(4 Month)
                   </h4>
                   <p className="text-gray-350">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Similique nulla eum perspiciatis explicabo, sapiente earum
-                    sint tempore hic quia perferendis esse officiis libero
-                    soluta, doloremque consequuntur deserunt eaque eveniet
-                    consequatur.
+                    Repaired and maintained various devices such as printers
+                    computers and laptops, Diagnosed and resolved basic
+                    hardware and software issues, Collaborated with the team to
+                    provide technical support and customer service.
                   </p>
                 </div>
               </div>
