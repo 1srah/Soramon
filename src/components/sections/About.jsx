@@ -1,8 +1,33 @@
 import { RevealOnScroll } from "./RevealOnScroll";
-
+import { useState } from "react";
+import img from "../img/me.jpg"
+import resume from "../img/Resume.jpg"
 export const About = () => {
   const frontendskills = ["React", "TailwindCSS"];
   const backendskills = ["Node.js", "Python", "Java", "C"];
+  const [isOpen, setIsOpen] = useState(false)
+  const [openTran, setOpenTran] = useState("Open Transcript");
+  const [classname,setClassname] = useState("p-3 border border-blue-500 rounded-xl bg-transparent hover:bg-gray-800 hover:border-white hover:text-blue-500 duration-150")
+
+  const [isOpen2, setIsOpen2] = useState(false)
+  const [openResume, setOpenResume] = useState("Open Resume");
+  const [classname2,setClassname2] = useState("p-3 border border-blue-500 rounded-xl bg-transparent hover:bg-gray-800 hover:border-white hover:text-blue-500 duration-150")
+
+  const toggle2 = () => {
+    setIsOpen2((isOpen2) => !isOpen2)
+    if(!isOpen2){
+      setOpenResume("")
+      setClassname2("")
+    }
+  }
+
+  const toggle = () => {
+    setIsOpen((isOpen) => !isOpen)
+    if(!isOpen){
+      setOpenTran("")
+      setClassname("")
+    }
+  }
   return (
     <section
       id="about"
@@ -20,7 +45,10 @@ export const About = () => {
               my final project of Selected Topic Subject.
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div>
+                <img src={img} alt="" className="rounded-full"/>
+              </div>
               <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
                 <h3 className="text-xl font-bold mb-4"> Frontend</h3>
                 <div className="flex flex-wrap gap-2">
@@ -100,6 +128,15 @@ export const About = () => {
                 </div>
               </div>
             </div>
+          </div>
+          <div className="p-6 rounded-xl border-white/10 border mt-8">
+          {isOpen && <img src={img} alt="" />}
+          <button className={classname} onClick={toggle}>{openTran}</button>
+          </div>
+
+          <div className="p-6 rounded-xl border-white/10 border mt-8">
+          {isOpen2 && <img src={resume} alt="" />}
+          <button className={classname2} onClick={toggle2}>{openResume}</button>
           </div>
         </div>
       </RevealOnScroll>
