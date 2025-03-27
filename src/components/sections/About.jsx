@@ -2,6 +2,9 @@ import { RevealOnScroll } from "./RevealOnScroll";
 import { useState } from "react";
 import img from "../img/me.jpg"
 import resume from "../img/Resume.jpg"
+import tran from "../img/transcript.jpg"
+
+
 export const About = () => {
   const frontendskills = ["React", "TailwindCSS"];
   const backendskills = ["Node.js", "Python", "Java", "C"];
@@ -130,7 +133,7 @@ export const About = () => {
             </div>
           </div>
           <div className="p-6 rounded-xl border-white/10 border mt-8">
-          {isOpen && <img src={img} alt="" />}
+          {isOpen && <img src={tran} alt="" />}
           <button className={classname} onClick={toggle}>{openTran}</button>
           </div>
 
